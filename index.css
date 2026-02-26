@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #e5e7ec;
+    font-family: sans-serif;
+    max-width: 2000px;
+    margin: 0 auto;
+}
+a {
+    color: rgb(57, 62, 109);
+    list-style-type: none;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    height: 80px;
+}
+
+nav .div1 a {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+nav .div2 a {
+    margin: 0 10px;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    margin: 50px 0;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 100px;
+}
+.hero .texxt {
+    flex: 5;
+}
+
+.hero .texxt h2{
+    font-size: 45px;
+}
+.hero .texxt .mylinks {
+    margin-top: 25px;
+    /* padding-top: 45px; */
+}
+.hero .texxt .mylinks a {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid blue;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: 0.2s;
+}
+.hero .texxt .mylinks a:hover {
+    color: black;
+    border: 2px solid black;
+}
+
+.hero .pict {
+    flex: 2;
+    display: flex;
+    justify-content: right;
+}
+
+.hero .pict img {
+    width: 250px;
+    border-radius: 50%;
+}
+
+.myskills {
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.myskills h2 {
+    text-align: center;
+
+}
+.myskills .texx {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.logos .logo img {
+    width: 30px;
+    height: 30px;
+}
+
+.myskills .logos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    object-fit: contain;
+}
+
+.myskills .logos .logo {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    border: 1.5px solid gray;
+    margin: 10px;
+    
+}
+.myskills .logos .logo span {
+    font-size: 18px;
+}
+
+.contact-sect {
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.contact-sect h2 {
+    font-size: 35px;
+}
+.contact-sect .divs {
+    display: flex;
+    gap: 50px;
+}
+
+.contact-sect .divs .text1 {
+    flex: 3;
+    margin-top: 20px;
+}
+
+.contact-sect form {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-sect .divs form input,
+.contact-sect .divs form textarea {
+    font-family: sans-serif;
+    border: 2px solid rgb(97, 128, 138);
+    background-color: transparent;
+    margin-bottom: 15px;
+    resize: none;
+}
+input{
+    height: 35px;
+}
+
+.contact-sect form button {
+    font-size: 16px;
+    color: white;
+    background-color: blue;
+    border: none;
+    height: 35px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.contact-sect form button:hover {
+    background-color: black;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    height: 80px;
+}
+
+footer .div1 a {
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+}
+
+footer .div2 a {
+    margin: 0 10px;
+    color: white;
+}
+
+
+@media (max-width: 850px) {
+    .hero .texxt h2 {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 740px) {
+    .hero {
+        flex-direction: column-reverse;
+        /* font-size: 35px; */
+    }
+    .hero .pict img {
+        width: 300px;
+    }
+
+    .contact-sect .divs {
+        flex-direction: column;
+    }
+}
+
+@media (max-width:600px) {
+    /* nav */
+    nav {
+        padding: 0 20px;
+    }
+
+    nav .div2 a span {
+        display: none;
+    }
+
+    .hero {
+        padding: 0 20px;
+    }
+
+    .hero .texxt h2 {
+        font-size: 30px;
+    }
+
+    .myskills {
+        padding: 0 20px;
+    }
+
+    .myskills .logos .logo span {
+        font-size: 16px;
+    }
+
+    .contact-sect {
+        padding: 0 20px;
+    }
+
+    footer {
+        padding: 0 20px;
+    }
+
+    footer .div2 a span {
+        display: none;
+    }
+}
+
+
